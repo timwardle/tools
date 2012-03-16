@@ -1,0 +1,9 @@
+#!/bin/sh
+
+echo deb http://download.virtualbox.org/virtualbox/debian maverick contrib non-free | sudo tee /etc/apt/sources.list.d/virtualbox.list > /dev/null
+
+wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add -
+
+sudo apt-get update
+
+sudo apt-get install -y virtualbox-4.1
