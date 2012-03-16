@@ -1,0 +1,7 @@
+#!/bin/sh
+
+wget http://files.vagrantup.com/packages/5bc27e46d3cd5246e0fa2141e52127066407c2b5/vagrant_1.0.1_x86_64.deb
+
+sudo dpkg -i vagrant_1.0.1_x86_64.deb
+
+rm vagrant_1.0.1_x86_64.deb
