@@ -1,7 +1,8 @@
 #!/bin/sh
+VERSION="1.0.3_x86_64"
 
-wget http://files.vagrantup.com/packages/5bc27e46d3cd5246e0fa2141e52127066407c2b5/vagrant_1.0.1_x86_64.deb
+wget "http://files.vagrantup.com/packages/eb590aa3d936ac71cbf9c64cf207f148ddfc000a/vagrant_$VERSION.deb"
 
-sudo dpkg -i vagrant_1.0.1_x86_64.deb
+sudo dpkg -i "vagrant_$VERSION.deb"
 
-rm vagrant_1.0.1_x86_64.deb
+rm "vagrant_$VERSION.deb"
